@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: medium;
+   background-color: lightgrey;
+}
+
+p {
+    color: green;
+}
+
+
+.rsvp {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #8d8e8f;
+    padding: 12px 12px;
+    width: 70%;
+    border: 1px solid #808080;
+    margin: 2% auto;
+    border-radius: 7px;
+    background: rgb(227, 222, 222);
+    box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
+}
