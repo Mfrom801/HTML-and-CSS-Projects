@@ -3,9 +3,10 @@
     <!DOCTYPE html>
 <html lang="en">
 	<head>
-        <link rel="stylesheet" href="./CSS/one_page_website.css">
+        <link rel="stylesheet" href="CSS/one_page_website.css">
+        <script src="JS/J1.js" defer></script>
 		<meta charset="utf-8">
-        <title>Must Have Guitars</title>
+        <title>Lots of Plants</title>
 	</head>
 	<body>
         <!-- NAV -->
@@ -25,7 +26,7 @@
         <div id="home">
             <div>
                 <div>
-                    <span>Must Have Guitars</span>
+                    <span>Beautiful Plants</span>
                 </div>
             </div>
         </div>
@@ -33,57 +34,90 @@
         
         <!--GALLERY-->
         <section>
-            <div id="gallery">
+            
                 <h1>Gallery</h1>
-                <div>
+
+                <h2 style="text-align:center">Lightbox</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="thumbs/plant1-small.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="thumbs/plant2-small.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="thumbs/plant3-small.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="thumbs/plant4-small.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="thumbs/plant1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="thumbs/plant2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="thumbs/plant3.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="thumbs/plant4.png" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="thumbs/plant1.png" style="width:100%" onclick="currentSlide(1)" alt="Cherry Blossom">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="thumbs/plant2.png" style="width:100%" onclick="currentSlide(2)" alt="Sunflower">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="thumbs/plant3.png" style="width:100%" onclick="currentSlide(3)" alt="Succulents">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="thumbs/plant4.png" style="width:100%" onclick="currentSlide(4)" alt="Indoor Plants">
+    </div>
+  </div>
+</div>
+           
+              
+
+
                 
-                <!-- PHOTO-CONTAINER 1-->
-                <div>
-                    <div>
-                        <img src="thumbs/Blue.jpeg" alt="Error">
-                        <div>
-                            <p>The beautiful Gibson Les Paul</p>
-                            
-                        </div>
-                    </div>
-                </div>
-                <!-- END PHOTO CONTAINER 1-->
-                    
-                 <!-- PHOTO-CONTAINER 2-->
-                <div>
-                    <div>
-                        <img src="thumbs/Green.jpg" alt="Error!">
-                        <div>
-                            <p><em>The guitar of the gods!</em></p>
-                            
-                        </div>
-                    </div>
-                </div>
-                <!-- END PHOTO CONTAINER 2-->
-                <!-- Video-CONTAINER 2-->
-                <div>
-                    <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/fAPo0EMfdLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                   
-                        <div>
-                           
-                        </div>
-                    </div>
-                </div>
-                <!-- END Video-->
-                    
-                </div>
-            </div>
-        </section>
-        <!-- END PHOTO CONTAINER--> 
-        
+                  
+
+
+
+                
+           
         <!-- RSVP -->
         <section>
             <div id="contact">
                 <div>
                     <h1>Contact Us</h1>
                 <div>
-                        <article><h2><span>Got any guitar questions?</span>
+                        <article><h2><span>Got any plant questions?</span>
                     <br />!
                             </h2></article>
                     <p>
@@ -111,7 +145,7 @@
         
         <!--FOOTER -->
         <div>
-           www.guitarsaredope.com &nbsp;|&nbsp; &copy; 2016
+           www.plantssaredope.com &nbsp;|&nbsp; &copy; 2016
         </div>
         <!--END FOOTER-->
 	</body>
